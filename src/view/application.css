@@ -1,0 +1,88 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root {
+	-fx-background-color: #9E9E9E;
+	-fx-font-smoothing-type: rgb;
+}
+
+.combo-box {
+	-fx-font-family: "Ubuntu";
+	-fx-font-weight: bold;
+	-fx-font-smoothing-type: gray;
+}
+
+
+
+#lbPortas {
+	-fx-text-fill: #1565C0;
+	-fx-font-family: "Fira Code Retina";
+	-fx-font-size: 15
+}
+
+#lbBauds {
+	-fx-text-fill: #1565C0;
+	-fx-font-family: "Fira Code";
+	-fx-font-size: 15
+}
+
+
+#lbConectado {
+	-fx-text-fill: white;
+	-fx-font-family: "Fira Code";
+}
+
+
+#btnConectar {
+	-fx-background-radius: 20;
+	-fx-background-color: #0091ea;
+	-fx-text-fill: white;
+	-fx-font-family: "Fira Code Retina";
+	-fx-font-weight: bold;
+}
+
+#btnDesconectar {
+	-fx-background-radius: 20;
+	-fx-background-color: #d50000;
+	-fx-text-fill: white;
+	-fx-font-family: "Fira Code Retina";
+	-fx-font-weight: bold;
+}
+
+#btnDesconectar:hover {
+	-fx-border-style: dashed;
+	-fx-border-radius: 20;
+	-fx-border-color: rgb(255, 255, 255); 
+	-fx-cursor: crosshair;
+}
+
+
+#btnConectar:hover {
+	-fx-border-style: dashed;
+	-fx-border-radius: 20;
+	-fx-border-color: rgb(255, 255, 255); 
+}
+
+#btnLimpar {
+	-fx-background-radius: 20;
+	-fx-background-color: #ff6e40;
+	-fx-text-fill: #212121;
+	-fx-font-family: "Fira Code Retina";
+	-fx-font-weight: bold;
+}
+
+#btnLimpar:pressed {
+	-fx-border-style: dashed;
+	-fx-border-radius: 20;
+	-fx-border-color: rgb(255, 255, 255);
+}
+
+.text-area {
+	-fx-font-family: Consolas;
+    -fx-font-size: 15;
+    -fx-text-fill: #ffffff;
+    -fx-display-caret:true;
+}
+
+.text-area .content{
+      -fx-background-color: #1565C0;
+  }

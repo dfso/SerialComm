@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <AnchorPane>
+         <children>
+            <Label fx:id="lbPortas" layoutX="14.0" layoutY="4.0" stylesheets="@application.css" text="Selecione a Porta" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Ubuntu" size="13.0" />
+               </font></Label>
+            <ComboBox fx:id="cbPortas" layoutX="14.0" layoutY="24.0" prefWidth="150.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="30.0" />
+            <Button fx:id="btnConectar" layoutX="184.0" layoutY="23.0" mnemonicParsing="false" onAction="#conectar" stylesheets="@application.css" text="Conectar" AnchorPane.topAnchor="30.0" />
+            <Label fx:id="lbBauds" layoutX="8.0" layoutY="59.0" stylesheets="@application.css" text="Baud Rate" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="60.0" />
+            <ComboBox fx:id="cbBauds" layoutX="14.0" layoutY="85.0" prefWidth="150.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="85.0" />
+            <Button fx:id="btnLimpar" layoutX="184.0" layoutY="77.0" mnemonicParsing="false" onAction="#limparDados" prefWidth="81.0" stylesheets="@application.css" text="Limpar" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="85.0" />
+            <Button fx:id="btnDesconectar" layoutX="464.0" layoutY="30.0" mnemonicParsing="false" onAction="#fecharConexao" stylesheets="@application.css" text="Fechar conexão" />
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="taDados" prefHeight="240.0" prefWidth="600.0" stylesheets="@application.css">
+         <font>
+            <Font name="Fira Code Retina" size="13.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </TextArea>
+      <Label fx:id="lbConectado" text="Conectado: ">
+         <VBox.margin>
+            <Insets left="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>
